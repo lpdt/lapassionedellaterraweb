@@ -96,24 +96,24 @@ export default function Nav() {
                 <XMarkIcon className='w-6 h-6 text-neutral-800' aria-hidden='true' />
               </button>
             </div>
-            <div className='flow-root mt-6'>
+            <div className='mt-6 flow-root'>
               <div className='-my-6 divide-y divide-gray-500/10'>
                 <div className='py-6 space-y-2'>
                   <a
                     href='#'
-                    className='block px-3 py-2 -mx-3 text-base font-semibold leading-7 rounded-lg hover:bg-default-dark-green/40'
+                    className='block px-3 py-2 -mx-3 text-base font-semibold rounded-lg leading-7 hover:bg-default-dark-green/40'
                   >
                     Home Page
                   </a>
                   <a
                     href='#'
-                    className='block px-3 py-2 -mx-3 text-base font-semibold leading-7 rounded-lg hover:bg-default-dark-green/40'
+                    className='block px-3 py-2 -mx-3 text-base font-semibold rounded-lg leading-7 hover:bg-default-dark-green/40'
                   >
                     Servizi
                   </a>
                   <a
                     href='#'
-                    className='block px-3 py-2 -mx-3 text-base font-semibold leading-7 rounded-lg hover:bg-default-dark-green/40'
+                    className='block px-3 py-2 -mx-3 text-base font-semibold rounded-lg leading-7 hover:bg-default-dark-green/40'
                   >
                     Galleria
                   </a>
