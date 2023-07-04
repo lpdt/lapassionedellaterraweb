@@ -12,27 +12,34 @@ import messangerIcon from '~/public/messanger.svg'
 export default function Nav() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
+  const handleMessengerClick = () => {
+    // Open Messanger
+    const messengerURL = `https://m.me/100057198080323`;
+    window.open(messengerURL, '_blank');
+  };
+
   const navElements = [
     {
       icon: locationIcon,
       title: 'Dove siamo',
-      paragraph: 'Via Arturo Toscanini, Rivalta di Torino 10040',
-      link: '#',
+      paragraph: 'Via Arturo Toscanini 49-59, Rivalta di Torino 10040',
+      href: `https://www.google.com/maps/place/45%C2%B001'43.0%22N+7%C2%B030'47.6%22E/@45.028596,7.5125753,273m/data=!3m2!1e3!4b1!4m13!1m8!3m7!1s0x4788156415020687:0x36695651a7c05482!2sVia+Toscanini,+15,+10040+Rivalta+di+Torino+TO!3b1!8m2!3d45.0276924!4d7.5155984!16s%2Fg%2F11c22wvyc3!3m3!8m2!3d45.028596!4d7.513219?entry=ttu`,
       alt: 'location'
     },
     {
       icon: cellularIcon,
       title: 'Whatsapp',
       paragraph: '+39 334 1631 418',
-      link: '#',
+      href: 'tel:334 1631 418',
       alt: 'cellular'
     },
     {
       icon: messangerIcon,
       title: 'Facebook',
       paragraph: 'La Passione della Terra',
-      link: '#',
-      alt: 'messanger'
+      href: '#',
+      alt: 'messanger',
+      onClick: handleMessengerClick
     },
   ]
 
@@ -51,7 +58,7 @@ export default function Nav() {
               />
               <div>
                 <h3 className='font-semibold'>{item.title}</h3>
-                <a className='italic text-white underline' href={item.link}>{item.paragraph}</a>
+                <a className='italic text-white underline' target='_blank' href={item.href} onClick={item.onClick}>{item.paragraph}</a>
               </div>
             </div>
           ))}
