@@ -43,12 +43,11 @@ export default function Nav() {
         <div className='flex gap-8'>
 
           {navElements.map((item, index) => (
-            <div key={index} className='flex items-start w-60'>
+            <div key={index} className='flex items-start gap-4 w-60'>
               <Image
                 priority
                 src={item.icon}
                 alt={item.alt}
-                className='mr-4'
               />
               <div>
                 <h3 className='font-semibold'>{item.title}</h3>
