@@ -17,19 +17,22 @@ export default function Nav() {
       icon: locationIcon,
       title: 'Dove siamo',
       paragraph: 'Via Arturo Toscanini, Rivalta di Torino 10040',
-      link: '#'
+      link: '#',
+      alt: 'location'
     },
     {
       icon: cellularIcon,
       title: 'Whatsapp',
       paragraph: '+39 334 1631 418',
-      link: '#'
+      link: '#',
+      alt: 'cellular'
     },
     {
       icon: messangerIcon,
       title: 'Facebook',
       paragraph: 'La Passione della Terra',
-      link: '#'
+      link: '#',
+      alt: 'messanger'
     },
   ]
 
@@ -44,7 +47,7 @@ export default function Nav() {
               <Image
                 priority
                 src={item.icon}
-                alt="Location Icon"
+                alt={item.alt}
                 className='mr-4'
               />
               <div>
@@ -96,24 +99,24 @@ export default function Nav() {
                 <XMarkIcon className='w-6 h-6 text-neutral-800' aria-hidden='true' />
               </button>
             </div>
-            <div className='mt-6 flow-root'>
+            <div className='flow-root mt-6'>
               <div className='-my-6 divide-y divide-gray-500/10'>
                 <div className='py-6 space-y-2'>
                   <a
                     href='#'
-                    className='block px-3 py-2 -mx-3 text-base font-semibold rounded-lg leading-7 hover:bg-default-dark-green/40'
+                    className='block px-3 py-2 -mx-3 text-base font-semibold leading-7 rounded-lg hover:bg-default-dark-green/40'
                   >
                     Home Page
                   </a>
                   <a
                     href='#'
-                    className='block px-3 py-2 -mx-3 text-base font-semibold rounded-lg leading-7 hover:bg-default-dark-green/40'
+                    className='block px-3 py-2 -mx-3 text-base font-semibold leading-7 rounded-lg hover:bg-default-dark-green/40'
                   >
                     Servizi
                   </a>
                   <a
                     href='#'
-                    className='block px-3 py-2 -mx-3 text-base font-semibold rounded-lg leading-7 hover:bg-default-dark-green/40'
+                    className='block px-3 py-2 -mx-3 text-base font-semibold leading-7 rounded-lg hover:bg-default-dark-green/40'
                   >
                     Galleria
                   </a>
