@@ -3,7 +3,7 @@ import background from "../public/background.png"
 export default function Introduction() {
 
   return (
-    <section>
+    <section id="introduction">
       <Image
         priority
         className="absolute object-cover min-h-screen -z-10"
