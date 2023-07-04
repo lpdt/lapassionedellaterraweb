@@ -5,9 +5,9 @@ import {
   Bars3Icon,
   XMarkIcon,
 } from '@heroicons/react/24/outline'
-import locationIcon from '../public/location.svg'
-import cellularIcon from '../public/cellular.svg'
-import messangerIcon from '../public/messanger.svg'
+import locationIcon from '~/public/location.svg'
+import cellularIcon from '~/public/cellular.svg'
+import messangerIcon from '~/public/messanger.svg'
 
 export default function Nav() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
