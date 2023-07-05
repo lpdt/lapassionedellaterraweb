@@ -1,4 +1,4 @@
-import Image from "next/image"
+import Image from 'next/image'
 import appleIcon from '~/public/apple.svg'
 import shearIcon from '~/public/shear.svg'
 import tractorIcon from '~/public/tractor.svg'
@@ -34,22 +34,22 @@ export default function Services() {
   ]
 
   return (
-    <section id="services">
-      <h1 className="max-w-[350px] mx-auto font-volkhov font-bold my-20 text-2xl text-center">Cosa offre La Passione della Terra ai suoi clienti</h1>
+    <section id='services'>
+      <h1 className='max-w-[350px] mx-auto font-volkhov font-bold my-20 text-2xl text-center'>Cosa offre La Passione della Terra ai suoi clienti</h1>
 
       {servicesCards.map((item, index) => (
         <div className='mx-3' key={index}>
-          <div className="flex items-start max-w-sm gap-4 mx-auto">
+          <div className='flex items-start max-w-sm gap-4 mx-auto'>
             <Image
               src={item.icon}
               alt={item.title}
             />
             <div>
-              <h2 className="mb-2 text-lg font-bold">{item.title}</h2>
-              <p className="italic">{item.description}</p>
+              <h2 className='mb-2 text-lg font-bold'>{item.title}</h2>
+              <p className='italic'>{item.description}</p>
             </div>
           </div>
-          {item.isSpplitted && <div className="max-w-sm mx-auto my-10 border-t border-default-light-green"></div>}
+          {item.isSpplitted && <div className='max-w-sm mx-auto my-10 border-t border-default-light-green'></div>}
         </div>
 
       ))}

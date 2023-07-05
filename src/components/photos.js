@@ -1,4 +1,4 @@
-import photo from '~/public/photo.svg'
+import photoIcon from '~/public/photo.svg'
 import Image from 'next/image'
 import cavolini from '~/public/img/cavolini.webp'
 import fagioli from '~/public/img/fagioli.webp'
@@ -11,13 +11,13 @@ export default function Photos() {
 
 
   return (
-    <section id="photos">
-      <div className='mt-40'>
+    <section id='photos'>
+      <div className='my-40'>
         <div className='flex items-center max-w-sm gap-4 px-3 mx-auto'>
           <div className='w-full border-2 border-default-light-green'></div>
           <Image
-            src={photo}
-            alt="photo"
+            src={photoIcon}
+            alt='photoIcon'
           />
           <div className='w-full border-2 border-default-light-green'></div>
         </div>
