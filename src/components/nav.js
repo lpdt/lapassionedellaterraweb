@@ -57,7 +57,7 @@ export default function Nav() {
                 alt={item.alt}
               />
               <div>
-                <h3 className='font-semibold'>{item.title}</h3>
+                <h3 className='font-semibold text-[18px]'>{item.title}</h3>
                 <a className='italic text-white underline' target='_blank' href={item.href} onClick={item.onClick}>{item.paragraph}</a>
               </div>
             </div>
