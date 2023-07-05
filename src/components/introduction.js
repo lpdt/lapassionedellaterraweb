@@ -1,5 +1,5 @@
 import Image from "next/image"
-import background from "~/public/background.png"
+import background from "~/public/img/background.png"
 export default function Introduction() {
 
   return (
@@ -11,7 +11,7 @@ export default function Introduction() {
           src={background}
           alt="background"
         />
-        <div className="pt-24 mx-3 text-center">
+        <div className="pt-16 mx-3 text-center">
           <h3 className="text-lg font-volkhov">Azienda agricola</h3>
           <h1 className="my-5 text-3xl font-bold text-default-dark-green font-volkhov">La Passione della Terra</h1>
           <div className="w-16 mx-auto my-8 border-t-2 border-default-light-green" ></div>
