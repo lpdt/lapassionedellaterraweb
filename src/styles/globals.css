@@ -3,14 +3,28 @@
 @tailwind utilities;
 
 :root {
-  --background: #FFF3DD; 
+  --background: #fff3dd;
   --dark-green: #264633;
-  --light-green: #5E9B50;
+  --light-green: #5e9b50;
 }
 
 html {
-
 }
 body {
-  background: var(--background)
+  background: var(--background);
+}
+
+@layer utilities {
+  @variants responsive {
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+
+    /* Hide scrollbar for IE, Edge and Firefox */
+    .no-scrollbar {
+      -ms-overflow-style: none; /* IE and Edge */
+      scrollbar-width: none; /* Firefox */
+    }
+  }
 }
