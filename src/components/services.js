@@ -42,7 +42,7 @@ export default function Services() {
           <div className="flex items-start max-w-sm gap-4 mx-auto">
             <Image
               src={item.icon}
-              alt="Apple icon"
+              alt={item.title}
             />
             <div>
               <h2 className="mb-2 text-lg font-bold">{item.title}</h2>
