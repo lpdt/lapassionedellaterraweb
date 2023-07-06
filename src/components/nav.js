@@ -52,6 +52,7 @@ export default function Nav() {
           {navElements.map((item, index) => (
             <div key={index} className='flex items-start gap-4 w-60'>
               <Image
+                className='w-12'
                 priority
                 src={item.icon}
                 alt={item.alt}
