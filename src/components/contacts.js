@@ -44,9 +44,9 @@ export default function Photos() {
       <div className='mx-3'>
         <div className='max-w-md pb-3 mx-auto text-center rounded-2xl font-volkhov bg-default-dark-green text-default-yellow'>
 
-          <h1 className='px-8 py-10 text-2xl font-bold text-center'>Per qualsiasi domanda non esitare a contattarci</h1>
+          <h1 className='px-8 py-10 text-2xl hover:text-3xl font-bold text-center'>Per qualsiasi domanda non esitare a contattarci</h1>
           <div className='py-10'>
-            <h3 className='text-lg'>Lunedì - Sabato</h3>
+            <h3 className='text-xl'>Lunedì - Sabato</h3>
             <div className='w-20 mx-auto my-4 border border-default-light-green'></div>
             <h2 className='text-xl'>8.00 - 20.00</h2>
           </div>
@@ -78,7 +78,7 @@ export default function Photos() {
             >
               <Image
                 alt='map'
-                className='rounded-2xl'
+                className='transition rounded-2xl hover:scale-95 '
                 src={maps}
               />
             </a>

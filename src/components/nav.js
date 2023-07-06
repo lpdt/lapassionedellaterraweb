@@ -18,7 +18,7 @@ export default function Nav() {
     window.open(messengerURL, '_blank');
   };
 
-  const navElements = [
+  const navContacts = [
     {
       icon: locationIcon,
       title: 'Dove siamo',
@@ -43,13 +43,22 @@ export default function Nav() {
     },
   ]
 
+  const navItem = [
+    { name: 'Home Page', href: '#introduction' },
+    { name: 'Servizi', href: '#services' },
+    { name: 'Galleria', href: '#photos' },
+    { name: 'Contattaci', href: '#contacts' }
+  ]
+
+  console.log(navItem);
+
   return (
     <>
       <header className='items-center justify-between hidden px-10 py-8 lg:flex bg-default-dark-green text-default-yellow'>
-        <h1 className='text-2xl font-volkhov'>La Passione della Terra</h1>
+        <h1 className='text-2xl hover:text-3xl font-volkhov'>La Passione della Terra</h1>
         <div className='flex gap-8'>
 
-          {navElements.map((item, index) => (
+          {navContacts.map((item, index) => (
             <div key={index} className='flex items-start gap-4 w-60'>
               <Image
                 className='w-12'
@@ -78,19 +87,12 @@ export default function Nav() {
               <Bars3Icon className='w-6 h-6 text-default-yellow lg:text-neutral-800' aria-hidden='true' />
             </button>
           </div>
-          <div className='hidden lg:flex lg:gap-x-20 text-neutral-800'>
-            <a href='#' className='font-semibold leading-6 text-md'>
-              Home Page
-            </a>
-            <a href='#' className='font-semibold leading-6 text-md'>
-              Servizi
-            </a>
-            <a href='#' className='font-semibold leading-6 text-md'>
-              Galleria
-            </a>
-            <a href='#' className='font-semibold leading-6 text-md'>
-              Contattaci
-            </a>
+          <div className='hidden lg:flex lg:gap-x-20 '>
+            {navItem.map((item, index) => (
+              <a href={item.href} key={index} className='font-semibold leading-6 transition duration-200 text-neutral-800 text-md hover:text-neutral-400'>
+                {item.name}
+              </a>
+            ))}
           </div>
         </nav>
         <Dialog as='div' className='lg:hidden' open={mobileMenuOpen} onClose={setMobileMenuOpen}>
