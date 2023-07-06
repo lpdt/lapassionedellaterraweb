@@ -3,6 +3,7 @@ import Introduction from '@/components/introduction'
 import Services from '@/components/services'
 import Photos from '@/components/photos'
 import Contacts from '@/components/contacts'
+import Footer from '@/components/footer'
 
 export default function Home() {
 
@@ -13,6 +14,7 @@ export default function Home() {
       <Services />
       <Photos />
       <Contacts />
+      <Footer />
     </main>
   )
 }
