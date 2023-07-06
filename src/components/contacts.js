@@ -42,9 +42,9 @@ export default function Photos() {
   return (
     <section id='contacts'>
       <div className='mx-3'>
-        <div className='max-w-md pb-3 mx-auto text-center rounded-2xl font-volkhov bg-default-dark-green text-default-yellow'>
+        <div className='max-w-md pb-3 mx-auto text-center md:max-w-5xl rounded-2xl font-volkhov bg-default-dark-green text-default-yellow'>
 
-          <h1 className='px-8 py-10 text-2xl hover:text-3xl font-bold text-center'>Per qualsiasi domanda non esitare a contattarci</h1>
+          <h1 className='max-w-md px-8 py-10 mx-auto text-2xl font-bold text-center hover:text-3xl'>Per qualsiasi domanda non esitare a contattarci</h1>
           <div className='py-10'>
             <h3 className='text-xl'>Lunedì - Sabato</h3>
             <div className='w-20 mx-auto my-4 border border-default-light-green'></div>
@@ -53,7 +53,7 @@ export default function Photos() {
           <div>
           </div>
 
-          <div className='pb-10'>
+          <div className='pb-10 mx-auto md:max-w-4xl md:grid md:grid-cols-3'>
             {contacts.map((item, index) => (
               <div key={index} className='mx-auto text-center mt-14 w-60'>
                 <Image
@@ -63,14 +63,14 @@ export default function Photos() {
                   alt={item.alt}
                 />
                 <div>
-                  <h3 className='text-lg'>{item.title}</h3>
-                  <a className='text-white underline font-inter' target='_blank' href={item.href} onClick={item.onClick}>{item.paragraph}</a>
+                  <h3 className='text-lg md:text-xl'>{item.title}</h3>
+                  <a className='italic text-white underline font-inter' target='_blank' href={item.href} onClick={item.onClick}>{item.paragraph}</a>
                 </div>
               </div>
             ))}
           </div>
 
-          <div className='mx-3'>
+          <div className='mx-3 md:px-20'>
             <a
               href={mapHref}
               className=''
@@ -78,7 +78,7 @@ export default function Photos() {
             >
               <Image
                 alt='map'
-                className='transition rounded-2xl hover:scale-95 '
+                className='transition rounded-2xl hover:scale-95 md:mb-10 md:h-[400px] object-cover'
                 src={maps}
               />
             </a>
