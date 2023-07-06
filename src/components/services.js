@@ -15,20 +15,20 @@ export default function Services() {
     },
     {
       icon: woodIcon,
-      title: 'Frutta e Verdura',
-      description: `Il nostro servizio di vendita di legna offre una varietà di legna di alta qualità, tra cui acacia, quercia, ciliegio e frassino. Siamo specializzati nel fornire legna da ardere per scopi domestici, come camino o stufa, così come per utilizzi commerciali o industriali.`,
+      title: 'Legna da ardere',
+      description: `Il nostro servizio di vendita di legna offre una varietà di legna di alta qualità, tra cui <span class='font-bold'>acacia, quercia, ciliegio e frassino.</span> Siamo specializzati nel fornire legna da ardere per scopi domestici, come camino o stufa, così come per utilizzi commerciali o industriali.`,
       isSpplitted: true
     },
     {
       icon: shearIcon,
-      title: 'Frutta e Verdura',
-      description: `Offriamo una vasta gamma di servizi per la cura delle aree verdi, che includono la pulizia accurata di aree incolte, con la rimozione di erbacce e detriti. Siamo specializzati nella potatura di alberi e siepi, che garantisce sia la loro salute che una forma estetica ottimale. Inoltre, forniamo un servizio sicuro ed efficiente di abbattimento degli alberi.`,
+      title: 'Pulizia campi',
+      description: `Offriamo servizi professionali come <span class='font-bold'>trinciatura, aratura e fresatura</span> per i vostri campi, con l'obiettivo di migliorare la qualità del terreno e prepararlo per una coltivazione ottimale.`,
       isSpplitted: true
     },
     {
       icon: tractorIcon,
-      title: 'Frutta e Verdura',
-      description: `Offriamo servizi professionali come trinciatura, aratura e fresatura per i vostri campi, con l'obiettivo di migliorare la qualità del terreno e prepararlo per una coltivazione ottimale.`,
+      title: 'Manutenzione del verde',
+      description: `Siamo specializzati nella <span class='font-bold'>potatura di alberi, siepi</span> e forniamo un servizio sicuro ed efficiente di <span class='font-bold'>abbattimento degli alberi.</span>`,
       isSpplitted: false
     },
   ]
@@ -46,7 +46,7 @@ export default function Services() {
             />
             <div>
               <h2 className='mb-2 text-lg font-bold'>{item.title}</h2>
-              <p className='italic'>{item.description}</p>
+              <p className='italic' dangerouslySetInnerHTML={{ __html: item.description }}></p>
             </div>
           </div>
           {item.isSpplitted && <div className='max-w-sm mx-auto my-10 border-t border-default-light-green'></div>}
