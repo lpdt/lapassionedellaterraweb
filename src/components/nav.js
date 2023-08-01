@@ -8,6 +8,7 @@ import {
 import locationIcon from '~/public/location.svg'
 import cellularIcon from '~/public/cellular.svg'
 import messangerIcon from '~/public/messanger.svg'
+import Link from 'next/link'
 
 export default function Nav() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
@@ -109,12 +110,12 @@ export default function Nav() {
             <div className='fixed flow-root'>
               <div className='-my-6 divide-y divide-gray-500/10'>
                 <div className='py-6 space-y-2'>
-                  <a
-                    href='#'
+                  <Link
+                    href='/'
                     className='block px-3 py-2 -mx-3 text-base font-semibold leading-7 rounded-lg hover:bg-default-dark-green/40'
                   >
                     Home Page
-                  </a>
+                  </Link>
                   <a
                     href='#services'
                     className='block px-3 py-2 -mx-3 text-base font-semibold leading-7 rounded-lg hover:bg-default-dark-green/40'
@@ -122,7 +123,7 @@ export default function Nav() {
                     Servizi
                   </a>
                   <a
-                    href='#galley'
+                    href='#gallery'
                     className='block px-3 py-2 -mx-3 text-base font-semibold leading-7 rounded-lg hover:bg-default-dark-green/40'
                   >
                     Galleria
@@ -133,7 +134,7 @@ export default function Nav() {
                     href='#contacts'
                     className='-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7  hover:bg-default-dark-green/40'
                   >
-                    Contattaci<span class='ml-2' aria-hidden='true'>&rarr;</span>
+                    Contattaci<span className='ml-2' aria-hidden='true'>&rarr;</span>
                   </a>
                 </div>
               </div>
