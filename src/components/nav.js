@@ -74,7 +74,7 @@ export default function Nav() {
 
         </div>
       </header >
-      <header className='fixed w-full shadow-md lg:sticky lg:top-0 lg:bg-default-yellow bg-default-dark-green'>
+      <header className='fixed z-50 w-full shadow-md lg:sticky lg:top-0 lg:bg-default-yellow bg-default-dark-green'>
         <nav className='flex items-center justify-end p-6 mx-auto max-w-7xl lg:px-8 lg:justify-center' aria-label='Global'>
           <div className='flex lg:hidden'>
             <button
