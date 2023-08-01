@@ -1,5 +1,4 @@
 import { Html, Head, Main, NextScript } from 'next/document'
-import { Analytics } from '@vercel/analytics/react';
 
 export default function Document() {
   return (
@@ -30,7 +29,6 @@ export default function Document() {
         <meta name="author" content="Alberto Ottenga, Vittorio Gioda design" />
       </Head>
       <body>
-        <Analytics />
         <Main />
         <NextScript />
       </body>
