@@ -54,7 +54,7 @@ export default function Nav() {
   return (
     <>
       <header className='items-center justify-between hidden px-10 py-8 lg:flex bg-default-dark-green text-default-yellow'>
-        <h1 className='text-2xl hover:text-3xl font-volkhov'>La Passione della Terra</h1>
+        <h1 className='text-2xl 2xl:text-3xl font-volkhov'>La Passione della Terra</h1>
         <div className='flex gap-8'>
 
           {navContacts.map((item, index) => (
