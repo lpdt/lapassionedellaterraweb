@@ -1,6 +1,11 @@
 
 export default function Photos() {
 
+  const iubendaPrivacyDocumentation = `
+  <a href="https://www.iubenda.com/privacy-policy/75516337" class="font-semibold" title="Privacy Policy ">Privacy Policy</a><script type="text/javascript">(function (w,d) {var loader = function () {var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src="https://cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s,tag);}; if(w.addEventListener){w.addEventListener("load", loader, false);}else if(w.attachEvent){w.attachEvent("onload", loader);}else{w.onload = loader;}})(window, document);</script>  `
+
+  const iubendaCookieDocumentation = `
+  <a href="https://www.iubenda.com/privacy-policy/75516337/cookie-policy" class="font-semibold" title="Cookie Policy ">Cookie Policy</a><script type="text/javascript">(function (w,d) {var loader = function () {var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src="https://cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s,tag);}; if(w.addEventListener){w.addEventListener("load", loader, false);}else if(w.attachEvent){w.attachEvent("onload", loader);}else{w.onload = loader;}})(window, document);</script>  `
 
   return (
     <section id='footer'>
@@ -11,13 +16,14 @@ export default function Photos() {
           <p>P.IVA 12879240013</p>
         </div>
         <div className="grid my-10">
-          <a>Privacy</a>
-          <a>Cookie e Policy</a>
+        <div dangerouslySetInnerHTML={{ __html: iubendaPrivacyDocumentation }}></div>
+        <div dangerouslySetInnerHTML={{ __html: iubendaCookieDocumentation }}></div>
         </div>
         <div>
           <p>Designed and built By <a href='https://www.vittoriogioda.com' target="_blank" className="italic font-bold underline">Vittorio Gioda</a></p>
         </div>
       </div>
-    </section >
+      
+    </section>
   )
 }
