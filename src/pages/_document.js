@@ -1,6 +1,15 @@
 import { Html, Head, Main, NextScript } from 'next/document'
 
 export default function Document() {
+
+  const iubendaImplementation = `
+  <script type="text/javascript">
+  var _iub = _iub || [];
+  _iub.csConfiguration = {"askConsentAtCookiePolicyUpdate":true,"floatingPreferencesButtonDisplay":"bottom-right","perPurposeConsent":true,"siteId":3256308,"whitelabel":false,"cookiePolicyId":75516337,"lang":"it", "banner":{ "acceptButtonDisplay":true,"backgroundOverlay":true,"closeButtonRejects":true,"customizeButtonDisplay":true,"explicitWithdrawal":true,"listPurposes":true,"position":"bottom" }};
+  </script>
+  <script type="text/javascript" src="https://cs.iubenda.com/autoblocking/3256308.js"></script>
+  <script type="text/javascript" src="//cdn.iubenda.com/cs/iubenda_cs.js" charset="UTF-8" async></script>`
+
   return (
     <Html lang='en'>
       <Head>
@@ -31,6 +40,7 @@ export default function Document() {
       <body>
         <Main />
         <NextScript />
+        <div dangerouslySetInnerHTML={{ __html: iubendaImplementation }}></div>
       </body>
     </Html>
   )
