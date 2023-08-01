@@ -4,7 +4,7 @@ export default function Introduction() {
 
   return (
     <section id='introduction'>
-      <div className='h-screen'>
+      <div className='h-screen pt-14'>
         <Image
           priority
           className='absolute object-cover min-h-screen -z-10'

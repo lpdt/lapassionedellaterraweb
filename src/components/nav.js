@@ -50,8 +50,6 @@ export default function Nav() {
     { name: 'Contattaci', href: '#contacts' }
   ]
 
-  console.log(navItem);
-
   return (
     <>
       <header className='items-center justify-between hidden px-10 py-8 lg:flex bg-default-dark-green text-default-yellow'>
@@ -75,7 +73,7 @@ export default function Nav() {
 
         </div>
       </header >
-      <header className='shadow-md lg:bg-default-yellow bg-default-dark-green'>
+      <header className='fixed w-full shadow-md lg:sticky lg:top-0 lg:bg-default-yellow bg-default-dark-green'>
         <nav className='flex items-center justify-end p-6 mx-auto max-w-7xl lg:px-8 lg:justify-center' aria-label='Global'>
           <div className='flex lg:hidden'>
             <button
@@ -108,7 +106,7 @@ export default function Nav() {
                 <XMarkIcon className='w-6 h-6 text-neutral-800' aria-hidden='true' />
               </button>
             </div>
-            <div className='flow-root mt-6'>
+            <div className='fixed flow-root'>
               <div className='-my-6 divide-y divide-gray-500/10'>
                 <div className='py-6 space-y-2'>
                   <a
@@ -118,13 +116,13 @@ export default function Nav() {
                     Home Page
                   </a>
                   <a
-                    href='#'
+                    href='#services'
                     className='block px-3 py-2 -mx-3 text-base font-semibold leading-7 rounded-lg hover:bg-default-dark-green/40'
                   >
                     Servizi
                   </a>
                   <a
-                    href='#'
+                    href='#galley'
                     className='block px-3 py-2 -mx-3 text-base font-semibold leading-7 rounded-lg hover:bg-default-dark-green/40'
                   >
                     Galleria
@@ -132,7 +130,7 @@ export default function Nav() {
                 </div>
                 <div className='py-6'>
                   <a
-                    href='#'
+                    href='#contacts'
                     className='-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7  hover:bg-default-dark-green/40'
                   >
                     Contattaci<span class='ml-2' aria-hidden='true'>&rarr;</span>
