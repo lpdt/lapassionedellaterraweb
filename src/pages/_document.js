@@ -2,14 +2,16 @@ import { Html, Head, Main, NextScript } from 'next/document'
 
 export default function Document() {
 
-  const iubendaImplementation = `<script type="text/javascript">
+  const iubendaImplementation = `
+  <script type="text/javascript">
   var _iub = _iub || [];
   _iub.csConfiguration = {"askConsentAtCookiePolicyUpdate":true,"enableFadp":true,"enableLgpd":true,"enableTcf":true,"fadpApplies":true,"floatingPreferencesButtonDisplay":"bottom-right","googleAdditionalConsentMode":true,"perPurposeConsent":true,"siteId":3256308,"tcfPurposes":{"2":"consent_only","3":"consent_only","4":"consent_only","5":"consent_only","6":"consent_only","7":"consent_only","8":"consent_only","9":"consent_only","10":"consent_only"},"whitelabel":false,"cookiePolicyId":75516337,"lang":"it", "banner":{ "acceptButtonDisplay":true,"backgroundOverlay":true,"closeButtonRejects":true,"customizeButtonDisplay":true,"explicitWithdrawal":true,"listPurposes":true,"position":"bottom" }};
   </script>
   <script type="text/javascript" src="https://cs.iubenda.com/autoblocking/3256308.js"></script>
-  <script type="text/javascript" src="//cdn.iubenda.com/cs/tcf/stub-v2.js"></script>
-  <script type="text/javascript" src="//cdn.iubenda.com/cs/tcf/safe-tcf-v2.js"></script>
-  <script type="text/javascript" src="//cdn.iubenda.com/cs/iubenda_cs.js" charset="UTF-8" async></script>`
+  <script type="text/javascript" src="//cdn.iubenda.com/cs/tcf/stable/stub-v2.js"></script>
+  <script type="text/javascript" src="//cdn.iubenda.com/cs/tcf/stable/safe-tcf-v2.js"></script>
+  <script type="text/javascript" src="//cdn.iubenda.com/cs/stable/iubenda_cs.js" charset="UTF-8" async></script>  `
+
   return (
     <Html lang='en'>
       <Head>
