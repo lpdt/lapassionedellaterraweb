@@ -35,7 +35,7 @@ export default function Services() {
 
   return (
     <section id='services'>
-      <h1 className='max-w-[350px] mx-auto font-volkhov font-bold my-20 text-2xl hover:text-3xl text-center'>Cosa offre La Passione della Terra ai suoi clienti</h1>
+      <h1 className='max-w-[350px] mx-auto font-volkhov font-bold my-20 text-2xl lg:text-3xl text-center'>Cosa offre La Passione della Terra ai suoi clienti</h1>
 
       <div className='mx-auto md:grid md:max-w-5xl md:gap-y-20 md:grid-cols-2'>
         {servicesCards.map((item, index) => (
