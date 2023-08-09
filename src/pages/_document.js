@@ -15,6 +15,7 @@ export default function Document() {
   return (
     <Html lang='en'>
       <Head>
+        <meta name="google-site-verification" content="0QIGlW3WY9G5hrHC1O0Gbxfgq60RyBE_fuFkn4Q4ll4" />
         <link rel='preconnect' href='https://fonts.googleapis.com' />
         <link rel='preconnect' href='https://fonts.gstatic.com' />
         <link href='https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Volkhov:wght@400;700&display=swap' rel='stylesheet' />
