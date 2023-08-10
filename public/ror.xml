@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:ror="http://rorweb.com/0.1/" >
+<channel>
+  <title>ROR Sitemap for http://www.lapassionedellaterra.it/</title>
+  <link>http://www.lapassionedellaterra.it/</link>
+
+<item>
+     <link>https://www.lapassionedellaterra.it/</link>
+     <title>La Passione Della Terra</title>
+     <description>Specializzati nella vendita di Frutta e Verdura al dettaglio, Legna da ardere, Servizi di Pulizia campi e Manutenzione del verde</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>0</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+</channel>
+</rss>
+  
