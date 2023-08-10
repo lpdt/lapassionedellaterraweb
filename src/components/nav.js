@@ -30,8 +30,8 @@ export default function Nav() {
     {
       icon: cellularIcon,
       title: 'Telefono',
-      paragraph: '+39 334 1631 418',
-      href: 'tel:334 1631 418',
+      paragraph: `<p>+39 334 1631 418</p><p>+39 366 1204 233</p>`,
+      href: '#',
       alt: 'cellular'
     },
     {
@@ -51,6 +51,7 @@ export default function Nav() {
     { name: 'Contattaci', href: '#contacts' }
   ]
 
+
   return (
     <>
       <header className='items-center justify-between hidden px-10 py-8 lg:flex bg-default-dark-green text-default-yellow'>
@@ -67,7 +68,8 @@ export default function Nav() {
               />
               <div>
                 <h3 className='text-lg font-semibold'>{item.title}</h3>
-                <a className='italic text-white underline' target='_blank' href={item.href} onClick={item.onClick}>{item.paragraph}</a>
+                
+                <a className='italic text-white underline' href={item.href} onClick={item.onClick} dangerouslySetInnerHTML={{ __html: item.paragraph }}></a>
               </div>
             </div>
           ))}
