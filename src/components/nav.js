@@ -88,12 +88,11 @@ export default function Nav() {
               <Bars3Icon className='w-6 h-6 text-default-yellow lg:text-neutral-800' aria-hidden='true' />
             </button>
           </div>
-          <div className='hidden lg:flex lg:gap-x-20 '>
+          <div className='hidden lg:flex lg:gap-x-20' onClick={() => setMobileMenuOpen(false)}>
             {navItem.map((item, index) => (
               <a
                 href={item.href}
                 key={index}
-                onClick={() => setMobileMenuOpen(false)}
                 className='font-semibold leading-6 transition duration-200 text-neutral-800 text-md hover:text-neutral-400'
               >
                 {item.name}
