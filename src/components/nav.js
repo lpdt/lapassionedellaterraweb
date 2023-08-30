@@ -68,7 +68,7 @@ export default function Nav() {
               />
               <div>
                 <h3 className='text-lg font-semibold'>{item.title}</h3>
-                
+
                 <a className='italic text-white underline' href={item.href} onClick={item.onClick} dangerouslySetInnerHTML={{ __html: item.paragraph }}></a>
               </div>
             </div>
@@ -90,7 +90,12 @@ export default function Nav() {
           </div>
           <div className='hidden lg:flex lg:gap-x-20 '>
             {navItem.map((item, index) => (
-              <a href={item.href} key={index} className='font-semibold leading-6 transition duration-200 text-neutral-800 text-md hover:text-neutral-400'>
+              <a
+                href={item.href}
+                key={index}
+                onClick={() => setMobileMenuOpen(false)}
+                className='font-semibold leading-6 transition duration-200 text-neutral-800 text-md hover:text-neutral-400'
+              >
                 {item.name}
               </a>
             ))}
