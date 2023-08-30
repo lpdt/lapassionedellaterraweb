@@ -127,12 +127,14 @@ export default function Nav() {
                   <a
                     href='#services'
                     className='block px-3 py-2 -mx-3 text-base font-semibold leading-7 rounded-lg hover:bg-default-dark-green/40'
+                    onClick={() => setMobileMenuOpen(false)}
                   >
                     Servizi
                   </a>
                   <a
                     href='#photos'
                     className='block px-3 py-2 -mx-3 text-base font-semibold leading-7 rounded-lg hover:bg-default-dark-green/40'
+                    onClick={() => setMobileMenuOpen(false)}
                   >
                     Galleria
                   </a>
@@ -141,6 +143,7 @@ export default function Nav() {
                   <a
                     href='#contacts'
                     className='-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7  hover:bg-default-dark-green/40'
+                    onClick={() => setMobileMenuOpen(false)}
                   >
                     Contattaci<span className='ml-2' aria-hidden='true'>&rarr;</span>
                   </a>
