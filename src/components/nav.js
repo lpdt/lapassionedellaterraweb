@@ -88,7 +88,7 @@ export default function Nav() {
               <Bars3Icon className='w-6 h-6 text-default-yellow lg:text-neutral-800' aria-hidden='true' />
             </button>
           </div>
-          <div className='hidden lg:flex lg:gap-x-20' onClick={() => setMobileMenuOpen(false)}>
+          <div className='hidden lg:flex lg:gap-x-20'>
             {navItem.map((item, index) => (
               <a
                 href={item.href}
@@ -100,6 +100,7 @@ export default function Nav() {
             ))}
           </div>
         </nav>
+        
         <Dialog as='div' className='lg:hidden' open={mobileMenuOpen} onClose={setMobileMenuOpen}>
           <div className='fixed inset-0 z-10' />
           <Dialog.Panel className='fixed inset-y-0 right-0 z-10 z-50 w-full px-6 py-6 overflow-y-auto bg-default-yellow sm:max-w-sm sm:ring-1 sm:ring-gray-900/10'>
@@ -119,6 +120,7 @@ export default function Nav() {
                   <Link
                     href='/'
                     className='block px-3 py-2 -mx-3 text-base font-semibold leading-7 rounded-lg hover:bg-default-dark-green/40'
+                    onClick={() => setMobileMenuOpen(false)}
                   >
                     Home Page
                   </Link>
@@ -129,7 +131,7 @@ export default function Nav() {
                     Servizi
                   </a>
                   <a
-                    href='#gallery'
+                    href='#photos'
                     className='block px-3 py-2 -mx-3 text-base font-semibold leading-7 rounded-lg hover:bg-default-dark-green/40'
                   >
                     Galleria
